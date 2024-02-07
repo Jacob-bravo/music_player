@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:music_player/screens/home_screen.dart';
 import 'package:music_player/screens/playlist_screen.dart';
 import 'package:music_player/screens/song_screen.dart';

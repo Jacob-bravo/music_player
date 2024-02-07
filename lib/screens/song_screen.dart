@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SongScreen extends StatefulWidget {
   const SongScreen({super.key});
 
@@ -11,6 +10,6 @@ class SongScreen extends StatefulWidget {
 class _SongScreenState extends State<SongScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
