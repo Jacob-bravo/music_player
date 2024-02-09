@@ -6,6 +6,7 @@ import 'package:music_player/models/song_model.dart';
 
 import '../widgets/section_header.dart';
 import '../widgets/songcard.dart';
+import '../widgets/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -44,22 +45,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     const SectionHeader(title: 'Playlists'),
                     ListView.builder(
+                      padding: const EdgeInsets.only(top: 10),
+                        physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         itemCount: playlists.length,
                         itemBuilder: (context, index) {
-                          return Row(
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.network(
-                                  playlists[index].imageUr,
-                                  height: 50,
-                                  width: 50,
-                                  fit: BoxFit.cover,
-                                ),
-                              )
-                            ],
-                          );
+                          return PlaylistCard(playlists: playlists[index]);
                         })
                   ],
                 ),
