@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:music_player/constants/nunito_font.dart';
 import 'package:music_player/models/playlist_model.dart';
 import 'package:music_player/models/song_model.dart';
-
-import '../widgets/section_header.dart';
-import '../widgets/songcard.dart';
 import '../widgets/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
